@@ -1,94 +1,31 @@
 nav {
   border: 1px solid #0f0f0f;
   background-color: #a8aeb1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .a {
-    height: 100px;
-    width: 960px;
-  }
-  .b {
-    height: 600px;
-    width: 200px;
-  }
-  .c,
-  .d {
-    height: 200px;
-    width: 380px;
-  }
-  .e,
-  .f,
-  .g,
-  .h {
-    height: 250px;
-    width: 190px;
-  }
-  .i {
-    height: 150px;
-    width: 760px;
-  }
-  .a,
-  .c,
-  .d,
-  .e,
-  .f,
-  .g,
-  .h {
-    border-bottom: none;
-  }
-  .b,
-  .c,
-  .e,
-  .f,
-  .g {
-    border-right: none;
-  }
-  nav {
-    background-color: lightgray;
+
+@media (min-width: 768px){
+  section {
+    display: grid;
+    grid-template-areas:
+      'b c c d d'
+      'b e f g h '
+      'b footer footer footer footer ';
   }
 }
 
 @media (max-width: 767px) {
-  .a {
-    height: 75px;
-    width: 480px;
-  }
-  .b {
-    height: 150px;
-    width: 480px;
-  }
-  .c,
-  .d {
-    height: 125px;
-    width: 480px;
-  }
-  .e,
-  .f,
-  .g,
-  .h {
-    height: 250px;
-    width: 240px;
-  }
-  .i {
-    height: 80px;
-    width: 480px;
-  }
-  .a,
-  .b,
-  .c,
-  .d,
-  .e,
-  .f,
-  .g,
-  .h {
-    border-bottom: none;
-  }
-  .e,
-  .g {
-    border-right: none;
-  }
-  nav {
-    background-color: lightgreen;
+  section {
+    display: grid;
+    grid-template-areas:
+      'b b'
+      'c c'
+      'd d'
+      'e f '
+      'g h'
+      'footer footer ';
   }
 }
