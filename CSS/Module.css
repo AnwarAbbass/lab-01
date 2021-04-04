@@ -1,10 +1,106 @@
-.b,
-.c,
-.d,
-.e,
-.f,
-.g,
-.h,
-.i {
-  float: left;
+@media (min-width: 768px) {
+  .a {
+    height: 100px;
+    width: 960px;
+  }
+  .b {
+    height: 600px;
+    width: 200px;
+  }
+  .c,
+  .d {
+    height: 200px;
+    width: 380px;
+  }
+  .e,
+  .f,
+  .g,
+  .h {
+    height: 250px;
+    width: 190px;
+  }
+  .i {
+    height: 150px;
+    width: 760px;
+  }
+  .a,
+  .c,
+  .d,
+  .e,
+  .f,
+  .g,
+  .h {
+    border-bottom: none;
+  }
+  .b,
+  .c,
+  .e,
+  .f,
+  .g {
+    border-right: none;
+  }
+  nav {
+    background-color: lightgray;
+  }
+  .b { grid-area: b; }
+  .c { grid-area: c; }
+  .d { grid-area: d; }
+  .e { grid-area: e; }
+  .f { grid-area: f; }
+  .g { grid-area: g; }
+  .h { grid-area: h; }
+  .i { grid-area: footer; }
+}
+
+@media (max-width: 767px) {
+  .a {
+    height: 75px;
+    width: 480px;
+  }
+  .b {
+    height: 150px;
+    width: 480px;
+  }
+  .c,
+  .d {
+    height: 125px;
+    width: 480px;
+  }
+  .e,
+  .f,
+  .g,
+  .h {
+    height: 250px;
+    width: 240px;
+  }
+  .i {
+    height: 80px;
+    width: 480px;
+  }
+  .a,
+  .b,
+  .c,
+  .d,
+  .e,
+  .f,
+  .g,
+  .h {
+    border-bottom: none;
+  }
+  .e,
+  .g {
+    border-right: none;
+  }
+  nav {
+    background-color: lightgreen;
+  }
+
+  .b { grid-area: b; }
+  .c { grid-area: c; }
+  .d { grid-area: d; }
+  .e { grid-area: e; }
+  .f { grid-area: f; }
+  .g { grid-area: g; }
+  .h { grid-area: h; }
+  .i { grid-area: footer; }
 }
